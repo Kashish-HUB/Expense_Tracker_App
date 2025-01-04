@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Expensetracker</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!-- Date Filter Options -->
+    <string-array name="date_filter_options">
+        <item>Today</item>
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>Custom Range</item>
+    </string-array>
+
+    <!-- Transaction Types Array (Income / Expense) -->
+    <string-array name="transaction_types">
+        <item>Income</item>
+        <item>Expense</item>
+    </string-array>
+
+    <!-- Frequency Types Array -->
+    <string-array name="frequency_types">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Bi-weekly</item>
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Annually</item>
+    </string-array>
+</resources>

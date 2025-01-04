@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/input_bg"
+    android:gravity="center">
+
+    <!-- Transaction Name Input -->
+    <EditText
+        android:id="@+id/transactionNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Transaction Name"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/input_bg" />
+
+    <!-- Transaction Amount Input -->
+    <EditText
+        android:id="@+id/transactionAmountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:textColor="#333333"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/input_bg" />
+
+    <!-- Transaction Type Input -->
+    <EditText
+        android:id="@+id/transactionTypeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type (Income/Expense)"
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/input_bg" />
+
+</LinearLayout>

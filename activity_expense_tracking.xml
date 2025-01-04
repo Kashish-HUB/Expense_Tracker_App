@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/gradient_color"
+    tools:context=".ExpenseTracking">
+
+    <!-- Total Income and Expense -->
+    <TextView
+        android:id="@+id/totalIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Income: $0.00"
+        android:textSize="18sp"
+        android:textColor="#4CAF50"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/totalExpenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Expenses: $0.00"
+        android:textSize="18sp"
+        android:textColor="#F44336"
+        android:padding="8dp" />
+
+    <!-- Budget Progress -->
+    <ProgressBar
+        android:id="@+id/budgetProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:max="100"
+        android:progressDrawable="@android:drawable/progress_horizontal" />
+
+    <!-- Add Transaction Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F0F0F0">
+
+        <EditText
+            android:id="@+id/transactionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/transactionAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            android:inputType="numberDecimal"
+            android:padding="8dp" />
+
+        <Spinner
+            android:id="@+id/transactionType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/date_filter_options"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/addTransactionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Transaction"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#03A9F4"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Transaction List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp" />
+</LinearLayout>

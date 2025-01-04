@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F4F6F9">
+
+    <!-- Sync Status Text -->
+    <TextView
+        android:id="@+id/syncStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sync Status: Not Started"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:gravity="center" />
+
+    <!-- Backup Button -->
+    <Button
+        android:id="@+id/backupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Backup Data"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="@drawable/input_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center" />
+
+    <!-- Restore Button -->
+    <Button
+        android:id="@+id/restoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Restore Data"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="@drawable/input_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

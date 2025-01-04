@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cardBackgroundExpense">#FF7043</color> <!-- This is a reddish color -->
+    <color name="cardBackgroundIncome">#66BB6A</color> <!-- Green -->
+    <color name="cardBackgroundNetBalance">#42A5F5</color> <!-- Blue -->
+
+</resources>
